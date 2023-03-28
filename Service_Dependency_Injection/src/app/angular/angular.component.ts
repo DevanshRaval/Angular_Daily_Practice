@@ -4,13 +4,12 @@ import { EnrollService } from '../MyService/enroll.service';
 @Component({
   selector: 'app-angular',
   templateUrl: './angular.component.html',
-  styleUrls: ['./angular.component.css']
+  styleUrls: ['./angular.component.css'],
 })
 export class AngularComponent {
   title: string = 'Angular';
-
+constructor(private enroll: EnrollService){}
   onEnroll(){
-    let obj = new EnrollService();
-    obj.enrollFunction(this.title);
+    this.enroll.enrollFunction(this.title);
   }
 }
