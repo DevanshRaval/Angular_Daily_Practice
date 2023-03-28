@@ -4,6 +4,7 @@ import { DataService } from './Service/dataService.service';
 import { AppComponent } from './app.component';
 import { DataInputComponent } from './data-input/data-input.component';
 import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
+import { Logger } from './Service/logger.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +15,7 @@ import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [DataService],
+  providers: [DataService,Logger],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
