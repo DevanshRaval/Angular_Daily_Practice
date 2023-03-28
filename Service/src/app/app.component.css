@@ -1,0 +1,13 @@
+div.course-container{
+    background-color: rgb(224, 224, 224);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+div.course{
+    background-color: red;
+    height: 30rem;
+    margin-left: 1rem;
+    width: 20rem;
+}
