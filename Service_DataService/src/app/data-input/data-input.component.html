@@ -1,8 +1,8 @@
-<form>
-    <input type="text" name="name" placeholder="Enter Name" [(ngModel)]="name">
-    <select name="status" id="status" [(ngModel)]="status">
+<form [formGroup]="loginForm">
+    <input type="text" name="name" placeholder="Enter Name" [(ngModel)]="name" required formControlName="name">
+    <select name="status" id="status" [(ngModel)]="status" required formControlName="status">
         <option value="active">Active</option>
         <option value="inactive">Inactive</option>
     </select>
-    <button (click)="addUser()">Add User</button>
+    <button (click)="addUser()" [disabled]="loginForm.invalid">Add User</button>
 </form>

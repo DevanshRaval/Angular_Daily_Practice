@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { DataService } from './Service/dataService.service';
 import { AppComponent } from './app.component';
 import { DataInputComponent } from './data-input/data-input.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -11,7 +11,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
