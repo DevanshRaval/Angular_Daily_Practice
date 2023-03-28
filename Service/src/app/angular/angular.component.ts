@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ENVIRONMENT_INITIALIZER } from '@angular/core';
+import { EnrollService } from '../MyService/enroll.service';
 
 @Component({
   selector: 'app-angular',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./angular.component.css']
 })
 export class AngularComponent {
+  title: string = 'Angular';
 
+  onEnroll(){
+    let obj = new EnrollService();
+    obj.enrollFunction(this.title);
+  }
 }

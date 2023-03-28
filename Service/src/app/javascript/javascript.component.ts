@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EnrollService } from '../MyService/enroll.service';
 
 @Component({
   selector: 'app-javascript',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./javascript.component.css']
 })
 export class JavascriptComponent {
-
+  title: string = 'Javascript'
+  onEnroll(){
+    let obj = new EnrollService();
+    obj.enrollFunction(this.title);
+  }
 }
