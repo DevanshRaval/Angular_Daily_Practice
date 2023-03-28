@@ -1,0 +1,28 @@
+div.container{
+    height: 100%;
+    background-color: blue;
+}
+div.img{
+    height: 70%;
+    background-color: rgb(230, 215, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.img img{
+    width: 200%;
+    height: 90%;
+}
+div.button{
+    height: 30%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.button button{
+    width: 80%;
+    height: 50%;
+    background-color: rgb(230, 215, 12);
+    border: none;
+}
